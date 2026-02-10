@@ -163,6 +163,161 @@ h6 {
   font-family: var(--heading-font);
 }
 
+
+/* form background start */
+:root {
+  --brand: #6366F1;
+}
+
+/* Aurora background */
+.aurora-bg {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #6366F1 0%, #ffffff 100%);
+}
+
+.aurora-bg::before,
+.aurora-bg::after {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.7;
+  z-index: 0;
+}
+
+/* Purple glow */
+.aurora-bg::before {
+  background: #6366F1;
+  top: -150px;
+  left: -150px;
+}
+
+/* White/soft blue glow */
+.aurora-bg::after {
+  background: #c7d2fe;
+  bottom: -150px;
+  right: -150px;
+}
+
+/* Keep content above gradient */
+.aurora-bg > * {
+  position: relative;
+  z-index: 1;
+}
+/* form background end */
+
+
+/* form card transparency start */
+.glass-card {
+  background: rgba(255, 255, 255, 0.751); /* translucent */
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(99, 102, 241, 0.15);
+}
+.glass-card .form-control {
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.glass-card .form-control:focus {
+  border-color: #6366F1;
+  box-shadow: 0 0 0 0.2rem rgba(99, 102, 241, 0.15);
+}
+
+/* form card transparency end */
+
+
+
+/* button toggle class for the service start  */
+/* ===============================
+   Custom Service Toggle
+   =============================== */
+
+.jr-toggle {
+  display: inline-flex;
+  background: #e9ecef;
+  padding: 6px;
+  border-radius: 999px;
+  gap: 6px;
+}
+
+.jr-toggle .nav-link {
+  border: none;
+  border-radius: 999px;
+  padding: 10px 28px;
+  font-weight: 600;
+  color: #495057;
+  background: transparent;
+  transition: all 0.25s ease;
+}
+
+.jr-toggle .nav-link:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.jr-toggle .nav-link.active {
+  background: var(--accent-color); /* Bootstrap primary */
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(13, 110, 253, 0.35);
+}
+/* button toggle class for the service end  */
+
+
+
+/* service page's home icon hpver effect start */
+/* ===== HOME SERVICE + WHAT WE TAKE ===== */
+
+.jr-home-card {
+  background: var(--surface-color);
+  border: 1px solid #e5e7eb;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.jr-home-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.06);
+  border-color: var(--accent-color);
+}
+
+.jr-home-icon-box {
+  width: 64px;
+  height: 64px;
+  background: var(--background-color);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+}
+
+.jr-home-card:hover .jr-home-icon-box {
+  background: var(--accent-color);
+  transform: scale(1.06);
+}
+
+.jr-home-icon-box img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.25s ease;
+}
+
+.jr-home-card:hover .jr-home-icon-box img {
+  filter: brightness(0) invert(1);
+}
+/* service page's home icon hpver effect end   */
+
+
+
+
+
 /* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
@@ -1222,6 +1377,10 @@ section,
   inset: 0;
   border-radius: 0px;
 }
+
+
+
+
 
 /*--------------------------------------------------------------
 # About Section
