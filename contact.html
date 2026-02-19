@@ -114,191 +114,163 @@
 
 
         <!-- form ssection start -->
-         <section class="mt-5 py-5 aurora-bg" >
-  <div class="container mt-lg-5">
+        <section class="mt-5 py-5 aurora-bg">
+            <div class="container mt-lg-5">
 
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
 
-        <div class="card shadow-sm border-0 glass-card" >
-          <div class="card-body p-4 p-lg-5">
+                        <div class="card shadow-sm border-0 glass-card">
+                            <div class="card-body p-4 p-lg-5">
 
-            <h2 class="fw-bold text-center mb-4" style="color: var(--heading-color);">
-              Get Your Free Quote
-            </h2>
+                                <h2 class="fw-bold text-center mb-4" style="color: var(--heading-color);">
+                                    Get Your Free Quote
+                                </h2>
 
-            <!-- SERVICE TOGGLE -->
-            <div class="text-center mb-4">
-              <ul class="nav jr-toggle justify-content-center" id="serviceTab" role="tablist">
+                                <!-- SERVICE TOGGLE -->
+                                <div class="text-center mb-4">
+                                    <ul class="nav jr-toggle justify-content-center" id="serviceTab" role="tablist">
 
-                <li class="nav-item">
-                  <button
-                    class="nav-link active"
-                    id="home-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#home-service"
-                    type="button"
-                    role="tab">
-                    Home Service
-                  </button>
-                </li>
+                                        <li class="nav-item">
+                                            <button class="nav-link active" id="home-tab" data-bs-toggle="pill"
+                                                data-bs-target="#home-service" type="button" role="tab">
+                                                Home Service
+                                            </button>
+                                        </li>
 
-                <li class="nav-item">
-                  <button
-                    class="nav-link"
-                    id="business-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#business-service"
-                    type="button"
-                    role="tab">
-                    Business Service
-                  </button>
-                </li>
+                                        <li class="nav-item">
+                                            <button class="nav-link" id="business-tab" data-bs-toggle="pill"
+                                                data-bs-target="#business-service" type="button" role="tab">
+                                                Business Service
+                                            </button>
+                                        </li>
 
-              </ul>
+                                    </ul>
+                                </div>
+
+                                <form>
+
+                                    <div class="tab-content">
+
+                                        <!-- ================= HOME SERVICE ================= -->
+                                        <div class="tab-pane fade show active" id="home-service">
+
+                                            <div class="row g-3">
+
+                                                <div class="col-md-6">
+                                                    <label class="form-label">First Name</label>
+                                                    <input type="text" class="form-control" required>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <label class="form-label">Last Name</label>
+                                                    <input type="text" class="form-control" required>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <label class="form-label">Email</label>
+                                                    <input type="email" class="form-control" required>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <label class="form-label">Phone Number</label>
+                                                    <input type="tel" class="form-control" required>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <label class="form-label">Items to be removed</label>
+                                                    <textarea class="form-control" rows="3"
+                                                        placeholder="Tell us what you want removed..."></textarea>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <label class="form-label">
+                                                        Address <small class="text-muted">(optional)</small>
+                                                    </label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <!-- ================= BUSINESS SERVICE ================= -->
+                                        <div class="tab-pane fade" id="business-service">
+
+                                            <div class="row g-3">
+
+                                                <div class="col-md-6">
+                                                    <label class="form-label">Business Name</label>
+                                                    <input type="text" class="form-control" required>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <label class="form-label">
+                                                        Industry <small class="text-muted">(optional)</small>
+                                                    </label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <label class="form-label">Contact First Name</label>
+                                                    <input type="text" class="form-control" required>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <label class="form-label">Contact Last Name</label>
+                                                    <input type="text" class="form-control" required>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <label class="form-label">Email</label>
+                                                    <input type="email" class="form-control" required>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <label class="form-label">Phone Number</label>
+                                                    <input type="tel" class="form-control" required>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <label class="form-label">Items to be removed</label>
+                                                    <textarea class="form-control" rows="3"
+                                                        placeholder="Describe the items or cleanout needed..."></textarea>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <label class="form-label">
+                                                        Address <small class="text-muted">(optional)</small>
+                                                    </label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Submit Button -->
+                                    <div class="text-center mt-4">
+                                        <button type="submit" class="btn btn-primary px-5 py-2">
+                                            Request Quote
+                                        </button>
+                                    </div>
+
+                                </form>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
-
-            <form>
-
-              <div class="tab-content">
-
-                <!-- ================= HOME SERVICE ================= -->
-                <div class="tab-pane fade show active" id="home-service">
-
-                  <div class="row g-3">
-
-                    <div class="col-md-6">
-                      <label class="form-label">First Name</label>
-                      <input type="text" class="form-control" required>
-                    </div>
-
-                    <div class="col-md-6">
-                      <label class="form-label">Last Name</label>
-                      <input type="text" class="form-control" required>
-                    </div>
-
-                    <div class="col-md-6">
-                      <label class="form-label">Email</label>
-                      <input type="email" class="form-control" required>
-                    </div>
-
-                    <div class="col-md-6">
-                      <label class="form-label">Phone Number</label>
-                      <input type="tel" class="form-control" required>
-                    </div>
-
-                    <div class="col-12">
-                      <label class="form-label">Items to be removed</label>
-                      <textarea
-                        class="form-control"
-                        rows="3"
-                        placeholder="Tell us what you want removed..."></textarea>
-                    </div>
-
-                    <div class="col-12">
-                      <label class="form-label">
-                        Address <small class="text-muted">(optional)</small>
-                      </label>
-                      <input type="text" class="form-control">
-                    </div>
-
-                  </div>
-
-                </div>
-
-                <!-- ================= BUSINESS SERVICE ================= -->
-                <div class="tab-pane fade" id="business-service">
-
-                  <div class="row g-3">
-
-                    <div class="col-md-6">
-                      <label class="form-label">Business Name</label>
-                      <input type="text" class="form-control" required>
-                    </div>
-
-                    <div class="col-md-6">
-                      <label class="form-label">
-                        Industry <small class="text-muted">(optional)</small>
-                      </label>
-                      <input type="text" class="form-control">
-                    </div>
-
-                    <div class="col-md-6">
-                      <label class="form-label">Contact First Name</label>
-                      <input type="text" class="form-control" required>
-                    </div>
-
-                    <div class="col-md-6">
-                      <label class="form-label">Contact Last Name</label>
-                      <input type="text" class="form-control" required>
-                    </div>
-
-                    <div class="col-md-6">
-                      <label class="form-label">Email</label>
-                      <input type="email" class="form-control" required>
-                    </div>
-
-                    <div class="col-md-6">
-                      <label class="form-label">Phone Number</label>
-                      <input type="tel" class="form-control" required>
-                    </div>
-
-                    <div class="col-12">
-                      <label class="form-label">Items to be removed</label>
-                      <textarea
-                        class="form-control"
-                        rows="3"
-                        placeholder="Describe the items or cleanout needed..."></textarea>
-                    </div>
-
-                    <div class="col-12">
-                      <label class="form-label">
-                        Address <small class="text-muted">(optional)</small>
-                      </label>
-                      <input type="text" class="form-control">
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-              <!-- Submit Button -->
-              <div class="text-center mt-4">
-                <button
-                  type="submit"
-                  class="btn btn-primary px-5 py-2">
-                  Request Quote
-                </button>
-              </div>
-
-            </form>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-</section>
-<!-- form section end -->
-
-
-
-        <!-- main section  start -->
-        <section class="py-5 bg-white">
-
         </section>
 
-        <!-- main section end  -->
 
 
-
-
-
-
+        <!-- form section end -->
 
 
 
@@ -585,7 +557,7 @@
                     <div class="footer-contact pt-3">
                         <p>Your City & Nearby Areas</p>
                         <p>Same-Day & Next-Day Service</p>
-                        <p class="mt-3"><strong>Phone:</strong> <span>+1 (XXX) XXX-XXXX</span></p>
+                        <p class="mt-3"><strong>Phone:</strong> <span>+61 460 941 392</span></p>
                         <p><strong>Email:</strong> <span>info@junkgonetoday.com</span></p>
                     </div>
                 </div>
