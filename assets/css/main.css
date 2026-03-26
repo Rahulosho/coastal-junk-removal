@@ -237,6 +237,18 @@ h6 {
 /* ===============================
    Custom Service Toggle
    =============================== */
+   @media (min-width: 576px) {
+    .small-sm-normal {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 360px) {
+    .jr-toggle .nav-link {
+        font-size: 0.8rem;
+        padding: 6px 8px;
+    }
+}
+
 
 .jr-toggle {
   display: inline-flex;
