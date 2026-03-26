@@ -425,6 +425,10 @@ h6 {
   transition: 0.3s;
 }
 
+.bg-accent {
+  background-color: var(--accent-color) ;
+}
+
 .header .topbar .contact-info i a:hover {
   color: var(--contrast-color);
   text-decoration: underline;
